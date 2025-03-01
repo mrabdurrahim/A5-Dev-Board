@@ -15,6 +15,7 @@
 </head>
 <body class="min-h-screen pt-6 bg-blue-100 poppins">
   <section class="py-3 bg-white rounded-lg mx-35 max-w-screen">
+    <!--nav section-->
   <header>
     <nav class="flex justify-between">
       <div class="flex items-center justify-center gap-2 pl-3">
@@ -34,12 +35,11 @@
   </header>
   </section>
   <!--Task assign-->
-  <section>
-  <section class="w-3/4 rounded-lg mx-35">
-    <div class="flex gap-3">
-      <div class="flex items-center justify-center w-3/4 mt-5 bg-white">
+  <section class="flex gap-3 pb-5 mx-35">
+    <section class="w-3/4 rounded-lg">
+      <div class="flex items-center justify-center mt-5 bg-white rounded-t-lg">
         <div class="flex items-center w-1/4 gap-1 my-5 ml-3 bg-blue-100 rounded-lg">
-          <div class="flex items-center justify-center my-3 ml-5 bg-white rounded-full h-15 w-15">
+          <div class="flex items-center justify-center my-3 ml-3 bg-white rounded-full h-15 w-15">
             <img src="./assets/checkbox.png">
           </div>
           <div>
@@ -47,14 +47,16 @@
             <h3 class="text-3xl font-bold">5</h3>
           </div>
         </div>
-        <div class="flex items-center w-1/2 gap-1 my-3 ml-3 rounded-lg bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300">
+        <button class="flex items-center w-1/2 gap-5 px-10 py-3 my-3 ml-3 text-xl rounded-lg gap bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300"><img class="w-12" src="./assets/board.png">Discover Something<br> New Today!</button>
+        <!--<button class="flex items-center w-1/2 gap-1 my-3 ml-3 rounded-lg bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 ">
           <div class="flex items-center justify-center my-3 ml-5 bg-white rounded-full h-15 w-15">
             <img src="./assets/board.png">
           </div>
           <div>
             <p class="text-2xl">Discover Something<br> New Today!</p>
           </div> 
-        </div>
+        </button>
+      -->
         <div class="flex items-center w-1/4 gap-1 mx-3 my-3 bg-blue-100 rounded-lg">
           <div class="flex items-center justify-center mx-2 my-3 bg-white rounded-full h-15 w-15">
             <img src="./assets/calender.png">
@@ -65,135 +67,147 @@
           </div>
         </div> 
       </div>
-
-    </div>
-    <hr class="text-gray-300 border-dashed ">
-    <!--completed section-->
-    <div class="flex justify-center py-3 bg-white">
-      <!--completed section-1-->
-      <div class="w-1/4 px-3 py-3 mx-3 my-3 bg-blue-100 rounded-lg">
-        <div>
-          <button class="p-1 bg-white rounded-sm">ShopEase</button>
+      <hr class="text-gray-300 border-dashed ">
+        <!--completed section-->
+      <div class="flex justify-center pt-3 bg-white ">
+          <!--completed section-1-->
+        <div class="w-1/3 px-3 py-3 mx-3 my-3 bg-blue-100 rounded-lg">
+            <div>
+              <button class="p-1 bg-white rounded-sm">ShopEase</button>
+            </div>
+            <div class="text-lg font-bold">Fix Mobile Button Issue </div>
+            <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+            </div>
+            <br>
+            <hr class="py-2 text-gray-300 border-dashed ">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm">Deadline</p>
+                <h4 class="font-semibold text-md">21 March 2025</h4>
+              </div>
+              <div class="">
+                <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
+              </div>
+            </div>
         </div>
-        <div class="text-lg font-bold">Fix Mobile Button Issue </div>
-        <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+          <!--completed section-2-->
+        <div class="w-1/3 px-3 py-3 mx-3 my-3 bg-blue-100 rounded-lg">
+            <div>
+              <button class="p-1 bg-white rounded-sm">ShopEase</button>
+            </div>
+            <div class="text-lg font-bold">Fix Mobile Button Issue </div>
+            <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+            </div>
+            <br>
+            <hr class="py-2 text-gray-300 border-dashed ">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm">Deadline</p>
+                <h4 class="font-semibold text-md">21 March 2025</h4>
+              </div>
+              <div class="">
+                <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
+              </div>
+            </div>
+        </div>
+          <!--completed section-3-->
+        <div class="w-1/3 px-3 py-3 mx-3 my-3 bg-blue-100 rounded-lg">
+            <div>
+              <button class="p-1 bg-white rounded-sm">ShopEase</button>
+            </div>
+            <div class="text-lg font-bold">Fix Mobile Button Issue </div>
+            <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+            </div>
+            <br>
+            <hr class="py-2 text-gray-300 border-dashed ">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm">Deadline</p>
+                <h4 class="font-semibold text-md">21 March 2025</h4>
+              </div>
+              <div class="">
+                <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="flex justify-center py-3 bg-white rounded-b-lg">
+        <!--completed section-4-->
+      <div class="w-1/3 px-3 py-3 mx-3 mb-3 bg-blue-100 rounded-lg">
+          <div>
+            <button class="p-1 bg-white rounded-sm">ShopEase</button>
+          </div>
+          <div class="text-lg font-bold">Fix Mobile Button Issue </div>
+          <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+          </div>
+          <br>
+          <hr class="py-2 text-gray-300 border-dashed ">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm">Deadline</p>
+              <h4 class="font-semibold text-md">21 March 2025</h4>
+            </div>
+            <div class="">
+              <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
+            </div>
+          </div>
+      </div>
+        <!--completed section-5-->
+      <div class="w-1/3 px-3 py-3 mx-3 mb-3 bg-blue-100 rounded-lg">
+          <div>
+            <button class="p-1 bg-white rounded-sm">ShopEase</button>
+          </div>
+          <div class="text-lg font-bold">Fix Mobile Button Issue </div>
+          <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+          </div>
+          <br>
+          <hr class="py-2 text-gray-300 border-dashed ">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm">Deadline</p>
+              <h4 class="font-semibold text-md">21 March 2025</h4>
+            </div>
+            <div class="">
+              <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
+            </div>
+          </div>
+      </div>
+        <!--completed section-6-->
+      <div class="w-1/3 px-3 py-3 mx-3 mb-3 bg-blue-100 rounded-lg">
+          <div>
+            <button class="p-1 bg-white rounded-sm">ShopEase</button>
+          </div>
+          <div class="text-lg font-bold">Fix Mobile Button Issue </div>
+          <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+          </div>
+          <br>
+          <hr class="py-2 text-gray-300 border-dashed ">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm">Deadline</p>
+              <h4 class="font-semibold text-md">21 March 2025</h4>
+            </div>
+            <div class="">
+              <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+    <section class="justify-center w-1/4 pt-6 mt-5 bg-white rounded-lg">
+      <div class="">
+        <div class="flex justify-center gap-3">
+          <img class="w-5" src="./assets/activity.png">
+          <h4 class="text-sm font-bold">Activity Log</h4>
+        </div>
+        <div class="flex justify-center px-2 py-2 my-3 text-sm text-white bg-blue-700 rounded-lg mx-26">
+          <button>Clear History</button>
         </div>
         <br>
         <hr class="py-2 text-gray-300 border-dashed ">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm">Deadline</p>
-            <h4 class="font-semibold text-md">21 March 2025</h4>
-          </div>
-          <div class="">
-            <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
-          </div>
-        </div>
+        
       </div>
-      <!--completed section-2-->
-      <div class="w-1/4 px-3 py-3 mx-3 my-3 bg-blue-100 rounded-lg">
-        <div>
-          <button class="p-1 bg-white rounded-sm">ShopEase</button>
-        </div>
-        <div class="text-lg font-bold">Fix Mobile Button Issue </div>
-        <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
-        </div>
-        <br>
-        <hr class="py-2 text-gray-300 border-dashed ">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm">Deadline</p>
-            <h4 class="font-semibold text-md">21 March 2025</h4>
-          </div>
-          <div class="">
-            <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
-          </div>
-        </div>
-      </div>
-      <!--completed section-3-->
-      <div class="w-1/4 px-3 py-3 mx-3 my-3 bg-blue-100 rounded-lg">
-        <div>
-          <button class="p-1 bg-white rounded-sm">ShopEase</button>
-        </div>
-        <div class="text-lg font-bold">Fix Mobile Button Issue </div>
-        <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
-        </div>
-        <br>
-        <hr class="py-2 text-gray-300 border-dashed ">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm">Deadline</p>
-            <h4 class="font-semibold text-md">21 March 2025</h4>
-          </div>
-          <div class="">
-            <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="flex justify-center py-3 bg-white">
-      <!--completed section-4-->
-      <div class="w-1/4 px-3 py-3 mx-3 my-3 bg-blue-100 rounded-lg">
-        <div>
-          <button class="p-1 bg-white rounded-sm">ShopEase</button>
-        </div>
-        <div class="text-lg font-bold">Fix Mobile Button Issue </div>
-        <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
-        </div>
-        <br>
-        <hr class="py-2 text-gray-300 border-dashed ">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm">Deadline</p>
-            <h4 class="font-semibold text-md">21 March 2025</h4>
-          </div>
-          <div class="">
-            <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
-          </div>
-        </div>
-      </div>
-      <!--completed section-5-->
-      <div class="w-1/4 px-3 py-3 mx-3 my-3 bg-blue-100 rounded-lg">
-        <div>
-          <button class="p-1 bg-white rounded-sm">ShopEase</button>
-        </div>
-        <div class="text-lg font-bold">Fix Mobile Button Issue </div>
-        <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
-        </div>
-        <br>
-        <hr class="py-2 text-gray-300 border-dashed ">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm">Deadline</p>
-            <h4 class="font-semibold text-md">21 March 2025</h4>
-          </div>
-          <div class="">
-            <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
-          </div>
-        </div>
-      </div>
-      <!--completed section-6-->
-      <div class="w-1/4 px-3 py-3 mx-3 my-3 bg-blue-100 rounded-lg">
-        <div>
-          <button class="p-1 bg-white rounded-sm">ShopEase</button>
-        </div>
-        <div class="text-lg font-bold">Fix Mobile Button Issue </div>
-        <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
-        </div>
-        <br>
-        <hr class="py-2 text-gray-300 border-dashed ">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm">Deadline</p>
-            <h4 class="font-semibold text-md">21 March 2025</h4>
-          </div>
-          <div class="">
-            <button class="px-5 py-2 text-white bg-blue-700 rounded-lg">Completed</button>
-          </div>
-        </div>
-      </div>
-    </div>   
+    </section>  
   </section>
-</section> 
 </body>
 </html>
