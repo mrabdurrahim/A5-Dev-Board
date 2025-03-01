@@ -22,7 +22,7 @@
       <div class="flex gap-10 pr-3">
         <div class="flex items-center justify-center gap-3 px-3 py-3 bg-blue-100 rounded-full w-30 h-15">
           <img class="w-8" src="./assets/checkbox.png" alt="">
-          <h3 class="text-4xl font-bold">23</h3>
+          <h3 class="text-4xl font-bold"><span id="add">23</span></h3>
         </div>
         <div class="px-3 py-3 bg-blue-100 rounded-full h-15 w-15">
           <button><img src="./assets/theme-btn.png"></button>
@@ -41,7 +41,7 @@
           </div>
           <div>
             <p class="text-sm">Task Assigned</p>
-            <h3 class="text-3xl font-bold">5</h3>
+            <h3 type="number" class="text-3xl font-bold"><span id ="task">6</span></h3>
           </div>
         </div>
         <button class="flex items-center w-1/2 gap-5 px-10 py-3 my-3 ml-3 text-xl text-white bg-blue-500 rounded-lg hover:bg-blue-800 "><img class="w-12" src="./assets/board.png">Discover Something<br> New Today!</button>
@@ -70,10 +70,10 @@
             <div class="flex items-center justify-between">
               <div>
                 <p class="text-sm">Deadline</p>
-                <h4 class="font-semibold text-md">21 March 2025</h4>
+                <h4 class="text-sm font-semibold">21 March 2025</h4>
               </div>
-              <div class="">
-                <button class="px-5 py-2 text-white bg-indigo-700 rounded-lg">Completed</button>
+              <div>
+                <button type="submit" class="px-3 py-2 text-white bg-indigo-700 rounded-lg completed disabled:bg-indigo-300">Completed</button>
               </div>
             </div>
         </div>
@@ -90,10 +90,10 @@
             <div class="flex items-center justify-between">
               <div>
                 <p class="text-sm">Deadline</p>
-                <h4 class="font-semibold text-md">21 March 2025</h4>
+                <h4 class="text-sm font-semibold">21 March 2025</h4>
               </div>
-              <div class="">
-                <button class="px-5 py-2 text-white bg-indigo-700 rounded-lg">Completed</button>
+              <div>
+                <button class="px-3 py-2 text-white bg-indigo-700 rounded-lg disabled:bg-indigo-300 completed">Completed</button>
               </div>
             </div>
         </div>
@@ -110,10 +110,10 @@
             <div class="flex items-center justify-between">
               <div>
                 <p class="text-sm">Deadline</p>
-                <h4 class="font-semibold text-md">21 March 2025</h4>
+                <h4 class="text-sm font-semibold">21 March 2025</h4>
               </div>
-              <div class="">
-                <button class="px-5 py-2 text-white bg-indigo-700 rounded-lg">Completed</button>
+              <div>
+                <button class="px-3 py-2 text-white bg-indigo-700 rounded-lg disabled:bg-indigo-300 completed">Completed</button>
               </div>
             </div>
         </div>
@@ -132,10 +132,10 @@
           <div class="flex items-center justify-between">
             <div>
               <p class="text-sm">Deadline</p>
-              <h4 class="font-semibold text-md">21 March 2025</h4>
+              <h4 class="text-sm font-semibold">21 March 2025</h4>
             </div>
-            <div class="">
-              <button class="px-5 py-2 text-white bg-indigo-700 rounded-lg">Completed</button>
+            <div>
+              <button  class="px-3 py-2 text-white bg-indigo-700 rounded-lg completed disabled:bg-indigo-300">Completed</button>
             </div>
           </div>
       </div>
@@ -152,10 +152,10 @@
           <div class="flex items-center justify-between">
             <div>
               <p class="text-sm">Deadline</p>
-              <h4 class="font-semibold text-md">21 March 2025</h4>
+              <h4 class="text-sm font-semibold">21 March 2025</h4>
             </div>
             <div class="">
-              <button class="px-5 py-2 text-white bg-indigo-700 rounded-lg">Completed</button>
+              <button class="px-3 py-2 text-white bg-indigo-700 rounded-lg completed disabled:bg-indigo-300">Completed</button>
             </div>
           </div>
       </div>
@@ -172,10 +172,10 @@
           <div class="flex items-center justify-between">
             <div>
               <p class="text-sm">Deadline</p>
-              <h4 class="font-semibold text-md">21 March 2025</h4>
+              <h4 class="text-sm font-semibold">21 March 2025</h4>
             </div>
             <div class="">
-              <button class="px-5 py-2 text-white bg-indigo-700 rounded-lg">Completed</button>
+              <button  class="px-3 py-2 text-white bg-indigo-700 rounded-lg completed disabled:bg-indigo-300">Completed</button>
             </div>
           </div>
       </div>
@@ -188,13 +188,18 @@
           <h4 class="text-sm font-bold">Activity Log</h4>
         </div>
         <div class="flex justify-center px-2 py-2 mx-20 my-3 text-sm text-white bg-blue-500 rounded-lg hover:bg-blue-800">
-          <button>Clear History</button>
+          <button id="clearHistory">Clear History</button>
         </div>
         <br>
-        <hr class="py-2 text-gray-300 border-dashed ">    
+        <hr class="py-2 text-gray-300 border-dashed "> 
+        <br>
+        <span id="message-display" class="w-10 rounded-lg bg-slate-300">"pdklgasd;;sdk"</span>   
       </div>
     </section>  
   </section>
   <script src="./script/script.js"></script>
+
+
+    <script src="./script/fix2.js"></script>
 </body>
 </html>

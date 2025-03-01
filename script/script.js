@@ -2,7 +2,7 @@
 const currentDate = new Date();
 document.getElementById("date").innerHTML = currentDate.toDateString();
 
-const items = [
+/*const items = [
   {fixMobileButtonIssue: 1},
   {addDarkMode: 1},
   {optimizeHomepage: 1},
@@ -18,4 +18,4 @@ function getTotal (items) {
   }
   return total;
 }
-const total = getTotal (items);
+const total = getTotal (items);*/
