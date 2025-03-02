@@ -18,30 +18,29 @@ buttons.forEach(button => {
         taskDisplay.textContent = task;
         buttons[buttonIndex].disabled = true;
         buttonIndex++;
-
-
     });
 });
-
-
-buttonsAdd.forEach(buttonAdd => {
-  buttonAdd.addEventListener('click', function() {
+    buttonsAdd.forEach(buttonAdd => {
+    buttonAdd.addEventListener('click', function() {
+    
+    alert("board updated successfully");
       add++;
       addDisplay.textContent = add;
       buttonsAdd[buttonAddIndex].disabled = true;
       buttonAddIndex++;
   });
+  
 });
 
 // next page option
 
 document.getElementById("discover").addEventListener("click", function() {
-    alert("তুমি কিন্তু মামা পরবর্তী পেজে যাচ্ছো!"); 
+    alert("we are going to a new page"); 
     window.location.href="blog.html"; 
 });
 
 function goBack() {
-    alert("তুমি কিন্তু মামা ডিস্টার্ব করেই যাচ্ছো!"); 
+    alert("we are coming back to home page"); 
     window.location.href = "index.html";
 }
 
@@ -52,3 +51,15 @@ let colors = ["silver", "aquamarine", "ivory", "pink", "lightgray"];
             document.body.style.backgroundColor = colors[index];
             index = (index + 1) % colors.length;
         });
+
+        function showInfo() {
+            let infoList = document.getElementById("infoList");
+            let data =`you have completed the task ${new Date().toLocaleString()}`; 
+            let listItem = document.createElement("li");
+            listItem.textContent = data;
+            infoList.appendChild(listItem);
+        }
+
+        function clearHistory() {
+            document.getElementById("infoList").innerHTML = "";
+        }
