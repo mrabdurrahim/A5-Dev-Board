@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assingment-5</title>
+  <link rel="stylesheet" href=".style/style.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+</head>
+<body class="min-h-screen pt-6 bg-blue-100">
+  <section class="py-3 bg-white rounded-lg mx-35 max-w-screen">
+    <!--nav section-->
+  <header>
+    <nav class="flex justify-between">
+      <div class="flex items-center justify-center gap-2 pl-3">
+        <img class="w-8" src="./assets/logo.png" alt="">
+        <h3 class="poppins">Dev<span class="font-bold">Board</span></h3>
+      </div>
+      <div class="flex items-center justify-between pr-3">
+        <div>
+          <button onclick="goBack()" type="submit" class="px-3 py-2 text-white bg-blue-600 rounded-lg hover:bg-indigo-800">Back to Desk</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  </section>
+  <div class="flex justify-center">
+    <h4 class="text-lg font-bold ">Blogs</h4>
+  </div>
+  <div class="flex justify-start">
+    <div class="px-3 py-3 text-lg font-bold bg-white rounded-lg mx-35 max-w-screen">
+      <h4>Question-1: What are the different ways to select an element in the DOM?</h4>
+      <hr class="text-gray-300 border-dashed ">
+      <h5 class="font-semibold text-md">Answer:The ways to select an element in the DOM are-<br>
+        1. document.getElementsByTagName(); 2. document.getElementById(); 3. document.getElementsByClassName(); 4. document.querySelector(); 5. document.querySelectorAll();
+      </h5>
+    </div>
+  </div>
+  <br>
+  <div class="flex justify-start">
+    <div class="px-3 py-3 text-lg font-bold bg-white rounded-lg mx-35 max-w-screen">
+      <h4>Question-2: What are the difference between innerHTML, innerText, and innerContent?</h4>
+      <hr class="text-gray-300 border-dashed ">
+      <h5 class="font-semibold text-md">Answer: The difference between innerHTML, innerText, and innerContent are-<br>
+        1. innerHTML is working with HTML tags inside the element. 
+        2. innerText is working only visible text, considering CSS styles.
+        3. innerContent is working for faster performance and when need all text, including hidden elements.
+      </h5>
+    </div>
+  </div>
+  <br>
+  <div class="flex justify-start">
+    <div class="px-3 py-3 text-lg font-bold bg-white rounded-lg mx-35 max-w-screen">
+      <h4>Question-3: What is event delegation in the DOM?</h4>
+      <hr class="text-gray-300 border-dashed ">
+      <h5 class="font-semibold text-md">Answer: Event delegation is a pattern in JavaScript that allows you to handle events more efficiently by attaching a single event listener to a parent element instead of multiple child elements. This is possible due to event bubbling.
+      </h5>
+    </div>
+  </div>
+  <br>
+  <div class="flex justify-start">
+    <div class="px-3 py-3 text-lg font-bold bg-white rounded-lg mx-35 max-w-screen">
+      <h4>Question-4: What is event bubbling in the DOM?</h4>
+      <hr class="text-gray-300 border-dashed ">
+      <h5 class="font-semibold text-md">Answer: Event bubbling is a procession in the DOM where an event starts from the target element and propagates up through its ancestors until it reaches the root document. 
+      </h5>
+    </div>
+  </div>
+  <script src="./script/fix2.js"></script>
+  <script src="./script/script.js"></script>
+  
+</body>
+</html>

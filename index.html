@@ -25,7 +25,7 @@
           <h3 class="text-4xl font-bold"><span id="add">23</span></h3>
         </div>
         <div class="px-3 py-3 bg-blue-100 rounded-full h-15 w-15">
-          <button><img src="./assets/theme-btn.png"></button>
+          <button id="color" ><img src="./assets/theme-btn.png"></button>
         </div>
       </div>
     </nav>
@@ -44,7 +44,7 @@
             <h3 type="number" class="text-3xl font-bold"><span id ="task">6</span></h3>
           </div>
         </div>
-        <button class="flex items-center w-1/2 gap-5 px-10 py-3 my-3 ml-3 text-xl text-white bg-blue-500 rounded-lg hover:bg-blue-800 "><img class="w-12" src="./assets/board.png">Discover Something<br> New Today!</button>
+        <button id="discover" type="submit" class="flex items-center w-1/2 gap-5 px-10 py-3 my-3 ml-3 text-xl text-white bg-blue-500 rounded-lg hover:bg-blue-800 "><img class="w-12" src="./assets/board.png">Discover Something<br> New Today!</button>
         <div class="flex items-center w-1/4 gap-1 mx-3 my-3 bg-blue-100 rounded-lg">
           <div class="flex items-center justify-center mx-2 my-3 bg-white rounded-full h-15 w-15">
             <img src="./assets/calender.png">
@@ -62,7 +62,7 @@
             <div>
               <button class="p-1 bg-white rounded-sm">ShopEase</button>
             </div>
-            <div class="text-lg font-bold">Fix Mobile Button Issue </div>
+            <div id="message" class="text-lg font-bold">Fix Mobile Button Issue </div>
             <div class="overflow-hidden text-md max-h-12">Debug using Chrome DevTools, check for... overlapping elements, and ensure onClick works properly and ensure onClick works properly
             </div>
             <br>
@@ -197,9 +197,12 @@
       </div>
     </section>  
   </section>
+  
+ 
+  <script src="./script/fix2.js"></script>
   <script src="./script/script.js"></script>
 
 
-    <script src="./script/fix2.js"></script>
+    
 </body>
 </html>

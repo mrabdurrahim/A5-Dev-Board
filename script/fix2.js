@@ -1,4 +1,7 @@
 
+const currentDate = new Date();
+document.getElementById("date").innerHTML = currentDate.toDateString();
+// click = add and click = subtract
 let task = 6;
 const taskDisplay = document.getElementById('task');
 const buttons = document.querySelectorAll('.completed');
@@ -8,8 +11,6 @@ let add = 23;
 const addDisplay = document.getElementById('add');
 const buttonsAdd = document.querySelectorAll('.completed');
 let buttonAddIndex = 0;
-
-
 
 buttons.forEach(button => {
     button.addEventListener('click', function() {
@@ -22,6 +23,7 @@ buttons.forEach(button => {
     });
 });
 
+
 buttonsAdd.forEach(buttonAdd => {
   buttonAdd.addEventListener('click', function() {
       add++;
@@ -31,20 +33,22 @@ buttonsAdd.forEach(buttonAdd => {
   });
 });
 
-const button = document.getElementById('completed');
-const messageDisplay = document.getElementById('message-display');
-const history = document.getElementById('history');
-const clearHistoryButton = document.getElementById('clearHistory');
+// next page option
 
-button.addEventListener('click', function() {
-    const message = 'বাটন ক্লিক করা হয়েছে!';
-    messageDisplay.textContent = message;
-
-    const messageElement = document.createElement('my name is ssd');
-    messageElement.textContent = message;
-    history.appendChild(messageElement);
+document.getElementById("discover").addEventListener("click", function() {
+    alert("তুমি কিন্তু মামা পরবর্তী পেজে যাচ্ছো!"); 
+    window.location.href="blog.html"; 
 });
 
-clearHistoryButton.addEventListener('click', function() {
-    history.innerHTML = ''; // হিস্টোরি ক্লিয়ার করা হলো
-});
+function goBack() {
+    alert("তুমি কিন্তু মামা ডিস্টার্ব করেই যাচ্ছো!"); 
+    window.location.href = "index.html";
+}
+
+// background color change
+let colors = ["silver", "aquamarine", "ivory", "pink", "lightgray"];
+        let index = 0;
+        document.getElementById("color").addEventListener("click", function() {
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;
+        });

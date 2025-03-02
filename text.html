@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>বাটন ক্লিক মেসেজ এবং হিস্টোরি ক্লিয়ার</title>
-    <style>
-        #message-display {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-top: 20px;
-            height: 50px;
-        }
-        #history {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-top: 20px;
-            height: 150px;
-            overflow-y: scroll;
-        }
-    </style>
+    <title>প্রথম পেজ</title>
 </head>
 <body>
-    <button id="myButton">ক্লিক করুন</button>
-    <div id="message-display"></div>
-    <div id="history"></div>
-    <button id="clearHistory">হিস্টোরি ক্লিয়ার করুন</button>
+    <h1>প্রথম পেজ</h1>
+    <button onclick="goToSecondPage()">দ্বিতীয় পেজে যান</button>
 
-    <script src="script.js"></script>
+    <script>
+        function goToSecondPage() {
+            alert("দ্বিতীয় পেজে যাচ্ছেন!");
+            window.location.href = "second.html";
+        }
+    </script>
 </body>
 </html>
